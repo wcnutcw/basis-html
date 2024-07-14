@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 2px solid blue;
+        }
+        input{
+            border: 2px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 >register</h1>
+        <form >
+            <div > 
+                <label for="firstname">ชื่อจริง</label>    <!-- for : ระบุชื่อป้ายกำกับ-->
+                <input type="text" name="fname" placeholder="ป้อนชื่อ" >  <!-- name: ระบุชื่อinput-->
+            </div>                                                  <!-- placeholder : คำอธิบายข้างในช่อง input-->
+            <div >
+                <label for="lastname">นามสกุล</label>
+                <input type="text" name="lname">
+            </div>
+            <div >
+                <label for="email">อีเมล</label>
+                <input type="email" name="email" required> <!-- required : บังคับให้กรอกข้อมูล -->
+            </div>
+            <div >
+                <label for="password">รหัสผ่าน</label>   
+                <input type="password" name="password">
+            </div>
+            <div >
+                <label for="">ที่อยู่</label>
+                <textarea name="" id="" cols="30" rows="5"></textarea> <!-- readonly : อ่านได้อย่างเดียว-->
+            </div>
+            <div >
+                <label for="age">อายุ</label>
+                <input type="number" name="age" min="0" max="10" value="2">    <!-- ค่าเริ่มต้นก่อนป้อนข้อมูล-->
+            </div>
+            <div >
+                <label for="age">อายุ</label>
+                <input type="number" name="age" min="0" max="10" value="2">    
+            </div>
+            <div >
+                <label for="date">Brithday</label>
+                <input type="date" name="BD">    
+            </div>
+            <div >
+                <label for="tel">Phone</label>
+                <input type="tel" name="tel">    
+            </div>
+            <div >
+                <label for="color">สีที่ชอบ</label>
+                <input type="color" name="color">    
+            </div>
+            <div >
+                <label for="range">ช่วงตัวเลข</label>
+                <input type="range" name="range" value="1">    
+            </div>
+            <div>
+                <label for="edu">ระดับการศึกษา</label>
+                <select name="education" id="">
+                    <option value="" selected></option> 
+                    <option value="ปริญญาตรี">ปริญญาตรี</option>  <!-- selected : คือตัวเลือกเริ่มต้น-->
+                    <option value="ปริญญาโท">ปริญญาโท</option>
+                    <option value="ปริญญาเอก">ปริญญาเอก</option> 
+                </select>
+            </div>
+            <div >
+                <label for="gen">เพศ</label>
+                <input type="radio" name="gender"> เพศชาย   <!-- radio : ต้องตั้งnameให้เหมือนกันถึงจะจัดอยู่ในกลุ่มเดียวกัน-->
+                <input type="radio" name="gender"> เพศหญิง   <!-- radio : เลือกได้ตัวเลือกเดียว แบบวงกลม-->
+            </div>
+            <div >
+                <label for="like">สิ่งที่ชอบ</label>
+                <input type="checkbox" name="fav">เขียนโปรแกรม  <!-- checkbox : ต้องตั้งnameให้เหมือนกันถึงจะจัดอยู่ในกลุ่มเดียวกัน-->
+                <input type="checkbox" name="fav">นอน          <!-- checkbox : เลือกได้หลายตัวเลือก แบบสี่เหลี่ยม-->
+                <input type="checkbox" name="fav">กิน            
+            </div>
+            <div>
+                <label for="doc">document</label> <!-- แนบเอกสาร -->
+                <input type="file">
+            </div>
+            <div>
+                <label for="url">website</label> <!-- แนบลิ้งurl -->
+                <input type="url">
+            </div>
+            <div>
+                <input type="submit" value="บันทึกข้อมูล">  <!-- submit : ส่งข้อมูลไปทาง server-->
+                <button> แสดงข้อมูล</button>
+                <input type="reset" value="ล้างข้อมูล">  <!-- reset : ล้างข้อมูล-->
+                <button type="reset">ล้างข้อมูล</button> <!-- ใช้ได้เหมือนกัน -->
+            </div>
+        </form>
+</body>
+</html>

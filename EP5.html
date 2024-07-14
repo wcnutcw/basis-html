@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Items</h1>
+    <table border="2" bgcolor="yellow" cellpading="10" cellspacing="10">
+        <thead>
+            <th>รหัสสินค้า</th>
+            <th>ภาพสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>ราคา</th>
+            <th>สั่งซื้อสินค้า</th>
+        </thead>
+        <tbody>
+            <tr bgcolor="red" align="center">
+                <td>1204</td>
+                <td colspan="2">   <!-- ประสาน 2 columns คือ คอลัมน์นี้และคอลัมน์ถัดไป -->
+                   <img src="https://static.toiimg.com/thumb/msid-53891743,width-748,height-499,resizemode=4,imgsize-152022/.jpg" alt="" width="120px" height="120px">
+                </td>
+                <td>ส้มตำ</td>
+                <td>150</td>
+                <td rowspan="2">
+                    <a href="www.google.com">buy</a>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="green">1205</td>
+                <td >
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz1tIXFiSIGSpQ47gbDNODcL9yixYuR7KeqA&s" alt="" width="120px" height="120px">
+                </td >
+                <td bgcolor="pink" align="right">MOON</td>
+                <td>200</td>
+                <td>
+                    <a href="www.google.com">buy</a>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="right"><strong>ราคารวม 300 บาท</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
